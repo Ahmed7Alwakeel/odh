@@ -1,0 +1,201 @@
+.calender-page {
+    padding: 3rem 1.5rem;
+    .title {
+        h2 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 3rem;
+        }
+    }
+
+    .calender-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        .react-calendar {
+            border: none;
+            width: 100%;
+            border: solid 1px #a8b4ca;
+            border-right: none;
+
+            .react-calendar__month-view__weekdays {
+                background: #ccc;
+                padding: 0.5rem 0;
+
+                .react-calendar__month-view__weekdays__weekday {
+                    color: $base-color;
+
+                    abbr[title] {
+                        text-decoration: none;
+                        font-size: 1rem;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+
+            .react-calendar__month-view__days {
+                .react-calendar__tile {
+                    color: #393939;
+                    border-right: solid 1px #ddd;
+                    border-bottom: solid 1px #ddd;
+                    padding: 1.5rem 0.5rem;
+                    font-size: 1.2rem;
+
+                    &.highlight {
+                        background-color: #d4d4d4;
+                    }
+
+                    &.react-calendar__tile--now {
+                        background-color: $alt-color  !important;
+                        color: #fff;
+                    }
+
+                    &.react-calendar__tile--active {
+                        background-color: #a8b4ca;
+                        border-color: #dfdfdf;
+                    }
+                }
+            }
+
+            .react-calendar__year-view__months {
+                .react-calendar__year-view__months__month {
+                    font-size: 1.4rem;
+                    padding: 1.22rem;
+                }
+            }
+
+            .react-calendar__navigation {
+                position: relative;
+                background: transparent;
+                border-right: solid 1px #a8b4ca;
+                margin-bottom: 0;
+                // height: 4.5rem;
+                height: 4.5rem;
+                .react-calendar__navigation__label {
+                    flex-grow: unset !important;
+                    width: fit-content !important;
+                    height: 100%;
+
+                    &:hover {
+                        background: transparent;
+                    }
+
+                    .react-calendar__navigation__label__labelText {
+                        padding-inline-start: 1rem;
+                        color: $base-color;
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                    }
+                }
+
+                .react-calendar__navigation__next-button,
+                .react-calendar__navigation__prev-button {
+                    background-color: transparent;
+                    min-width: unset;
+                    width: 0;
+                    height: 100%;
+                    font-size: 0;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    display: flex;
+                    align-items: center;
+                }
+
+                .react-calendar__navigation__next-button {
+                    right: 2.5rem;
+
+                    &::before {
+                        content: url('/ir/next.svg');
+                        height: 1.25rem;
+                    }
+                }
+            }
+
+            .react-calendar__navigation__prev-button {
+                right: 5.5rem;
+
+                &::before {
+                    content: url('/ir/prev.svg');
+                    height: 1.25rem;
+                }
+            }
+        }
+        .events {
+            .event {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #a8b4ca;
+                height: fit-content;
+                padding-bottom: 1rem;
+                margin-bottom: 2.5rem;
+                &:not(:first-of-type) {
+                    // padding-top: 1rem;
+                }
+                .event-details {
+                    display: flex;
+                    flex-direction: column;
+    
+                    .header {
+                        display: flex;
+                        align-items: center;
+                        padding-bottom: 1rem;
+    
+                        .date-icon-container {
+                            position: relative;
+                            width: 1.5rem;
+                            height: 1.5rem;
+                        }
+    
+                        .media-date {
+                            font-size: 1.25rem;
+                            font-weight: 800;
+                            margin-inline-start: 0.25rem;
+                        }
+                    }
+    
+                    .event-name {
+                        font-size: 2rem;
+                        color: $base-color;
+                    }
+                }
+    
+                .event-type {
+                    background-color: $base-color;
+                    min-width: 5rem;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 1.4rem;
+                    text-transform: capitalize;
+                    padding: 0.25rem 0.5rem;
+                    border-radius: 3rem;
+                    height: fit-content;
+                }
+            }
+        }
+
+    }
+}
+@media(min-width:1024px){
+    .calender-page {
+        padding: 5.3125rem 6.5rem;
+        .calender-container {
+            display: grid;
+            grid-template-columns: 0.8fr 1fr;
+            gap: 2rem;
+            .event {
+                margin-bottom: 0;
+            }
+            .react-calendar{
+                .react-calendar__navigation {
+                    position: relative;
+                    background: transparent;
+                    border-right: solid 1px #a8b4ca;
+                    margin-bottom: 0;
+                    height: 6.75rem;  
+                }
+            }
+        }
+    }
+}

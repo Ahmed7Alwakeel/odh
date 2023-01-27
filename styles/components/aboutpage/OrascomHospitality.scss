@@ -1,0 +1,353 @@
+.orascom-hospitality-container {
+	border-bottom: 1px solid #ddd;
+	// padding-bottom: 3.3125rem;
+	padding-bottom: 1.5rem;
+
+	.orascom-hospitality__wrapper {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+
+		&.mobile-hospitality {
+			.logo-container {
+				width: 100%;
+				height: 100%;
+				margin-bottom: 0;
+				.image-container {
+					width: 70%;
+					height: 100%;
+					position: relative;
+					min-height: 8rem;
+					margin: auto;
+				}
+			}
+
+			.text-container {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				padding: 2.5rem 1.5rem;
+				p {
+					font-size: 1.4rem;
+					line-height: 1.3;
+					color: #5f5f5f;
+					opacity: 0.6;
+					width: 100%;
+					margin: auto;
+					text-align: justify;
+					// -webkit-line-clamp: 3;
+					height: 5.5rem;
+					overflow: hidden;
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					position: relative;
+					&.expanded {
+						-webkit-line-clamp: unset;
+						height: auto;
+					}
+				}
+				.read-more-less-btn {
+					font-size: 1.3rem;
+					color: $alt-color;
+					text-align: start;
+				}
+			}
+		}
+
+		.learn-more {
+			color: $base-color;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: fit-content;
+			margin: 1rem 0 0;
+			&::before {
+				background: #c7a45d;
+			}
+		}
+
+		.header-container {
+			.section-header-container {
+				&.orascom-hospitality-header {
+					// padding: 3rem 1.5rem;
+					padding-left: 1.5rem;
+					padding-right: 1.5rem;
+					width: 100%;
+					align-self: center;
+					h4 {
+						// margin-bottom: 1rem;
+					}
+					h2 {
+						margin: 0 0 auto 0;
+						font-size: 1.8rem;
+					}
+				}
+			}
+		}
+
+		.text-container {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			padding: 2.5rem 1.5rem 0;
+
+			.logo-container {
+				width: 100%;
+				height: 100%;
+				margin-bottom: 0;
+
+				.image-container {
+					width: 70%;
+					height: 100%;
+					position: relative;
+					min-height: 8rem;
+					margin: auto;
+				}
+			}
+
+			.right-container {
+				p {
+					font-size: 1.4rem;
+					color: #5f5f5f;
+					// opacity: 0.6;
+					width: 100%;
+					margin: auto;
+					text-align: justify;
+					// -webkit-line-clamp: 4;
+					overflow: hidden;
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					position: relative;
+					white-space: break-spaces;
+					height: 9rem;
+					&.expanded {
+						-webkit-line-clamp: unset;
+						height: auto;
+					}
+				}
+				.read-more-less-btn {
+					font-size: 1.5rem;
+					color: $alt-color;
+					cursor: pointer;
+					// margin-inline-start: 5rem;
+				}
+			}
+		}
+	}
+
+	.swiper-container {
+		// padding-inline-start: 1rem;
+		padding-top: 2rem;
+		position: relative;
+
+		.swiper {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+
+			.image-wrapper {
+				width: 100%;
+				height: 16rem;
+				position: relative;
+
+				.logo-container {
+					background: #fff;
+					position: absolute;
+					top: 1rem;
+					left: 1rem;
+					width: 5rem;
+					height: 5rem;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					border: 1px solid #dfdfdf;
+
+					.image-container {
+						position: relative;
+						width: 70%;
+						height: 70%;
+						margin: auto;
+					}
+				}
+			}
+		}
+
+		.orascom-hospitality-navigation-container {
+			width: fit-content;
+			display: flex;
+			flex-direction: row;
+			justify-content: left;
+			position: unset;
+			margin: auto;
+			align-items: center;
+			margin: auto;
+			z-index: 0;
+			margin-top: 1rem;
+
+			.swiper-pagination-progressbar {
+				transform: rotate(270deg);
+				// left: 32%;
+				position: unset;
+				top: unset;
+				width: 3rem;
+				height: 2px;
+			}
+
+			.orascom-hospitality-next,
+			.orascom-hospitality-prev {
+				position: unset;
+				margin-top: unset;
+				// margin-inline-end: 1rem;
+				height: 90px;
+				width: calc(90px / 44 * 27);
+			}
+
+			.swiper-pagination-progressbar-fill {
+				background-color: #000;
+			}
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.orascom-hospitality-container {
+		padding-bottom: 3.3125rem;
+		.orascom-hospitality__wrapper {
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+
+			.header-container {
+				width: 45.6%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding-left: 6.6rem;
+
+				.left-container {
+					// padding-inline-end: 6.5rem;
+					p {
+						font-size: 1.5rem;
+						width: 80%;
+						color: #5f5f5f;
+						// opacity: 0.6;
+						margin: unset;
+						text-align: justify;
+					}
+
+					.learn-more {
+						display: flex;
+					}
+					.read-more__container {
+						.read-more-link {
+							font-size: 1.5rem;
+						}
+					}
+				}
+
+				.section-header-container {
+					&.orascom-hospitality-header {
+						padding-left: 0;
+						width: 75%;
+						align-self: flex-start;
+						padding-bottom: 3rem;
+
+						h4 {
+							// margin-bottom: 1rem;
+						}
+
+						h2 {
+							margin: 0 0 auto 0;
+							font-size: 4rem;
+						}
+					}
+				}
+			}
+
+			.text-container {
+				width: 54.5%;
+				display: flex;
+				flex-direction: column;
+				padding: 6.5rem 6.5rem 0 0;
+
+				.logo-container {
+					margin-bottom: 3rem;
+
+					.image-container {
+						width: 70%;
+						height: 100%;
+						min-height: 13rem;
+						margin-left: 4rem;
+					}
+				}
+
+				.right-container {
+					p {
+						font-size: 1.5rem;
+						width: 100%;
+						text-align: justify;
+					}
+				}
+				.read-more-less-btn {
+					font-size: 1.5rem;
+					color: $alt-color;
+					text-align: start;
+					// margin-inline-start: 5rem;
+				}
+				.read-more__container {
+					// margin-inline-start: 5rem;
+				}
+			}
+		}
+
+		.swiper-container {
+			padding-inline-start: 6.5rem;
+			padding-top: 3rem;
+
+			.swiper {
+				.image-wrapper {
+					height: 32rem;
+					.photoCredit {
+						position: absolute;
+						bottom: 0;
+						width: 100%;
+						height: 15rem;
+						background: linear-gradient(
+							0deg,
+							rgba(0, 0, 0, 0.8477984943977591) 0%,
+							rgba(0, 0, 0, 0) 30%
+						);
+						z-index: 5;
+						opacity: 0;
+						transition: all 0.3s ease-in-out;
+						display: flex;
+						align-items: flex-end;
+						justify-content: flex-end;
+						padding-inline-end: 2rem;
+						padding-bottom: 1rem;
+						span {
+							color: #fff;
+							font-size: 1.5rem;
+						}
+					}
+					&:hover {
+						.photoCredit {
+							opacity: 1;
+						}
+					}
+					.logo-container {
+						top: 3rem;
+						left: 3rem;
+						width: 8rem;
+						height: 8rem;
+					}
+				}
+			}
+
+			.orascom-hospitality-navigation-container {
+				margin: inherit;
+				margin-top: 1rem;
+			}
+		}
+	}
+}

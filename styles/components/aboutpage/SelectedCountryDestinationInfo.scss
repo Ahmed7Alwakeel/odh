@@ -1,0 +1,69 @@
+.selected-country-destination-info{
+  position: absolute;
+  bottom: unset;
+  // width: 65%;
+  width: 100%;
+  cursor: pointer;
+  top: 5rem;
+  cursor: pointer;
+  top:1.2rem;
+    ul{
+      list-style: none;
+      li{
+        margin-bottom: 0.5rem;
+        span{
+          color: #C7A45D;
+          font-size: 1.8rem;
+          border-bottom: 1px solid #C7A45D;
+          padding-bottom: 0.2rem;
+          font-weight: 400;
+          sub{
+            bottom: 14px;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+          }
+        }
+        h3{
+          color: #000000; 
+          font-size: 1.2rem;
+          margin-top: 0.3rem;
+          font-weight: 500;
+        }
+      } 
+  }
+  .read-more__map{
+    display: flex;
+    align-items: center ;
+    margin-top: 1rem;
+    &.opacity-none{
+      opacity: 0 !important;
+    }
+  }
+}
+@media (min-width : 1024px) {
+  .selected-country-destination-info{ 
+    bottom: 5rem; 
+    width: 50%; 
+    top: auto;
+    cursor: pointer;
+      ul{ 
+        li{
+          span{ 
+            font-size: 2.8rem; 
+            padding-bottom: 0.2rem; 
+            sub{
+              bottom: 14px; 
+              font-size: 1.2rem;
+            }
+          }
+          h3{ 
+            font-size: 1.2rem;
+            margin-top: 0.3rem; 
+          }
+        } 
+    }
+    .read-more__map{ 
+      margin-top: 0; 
+    }
+  }
+}

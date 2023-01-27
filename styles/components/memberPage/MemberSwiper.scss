@@ -1,0 +1,53 @@
+.member-swiper-container{
+  .about-orascom__header{
+    width: 100%;
+  }
+  .member-swiper__wrapper{
+    padding: 0 1.5rem 1.5rem;
+	.board-directors__data {
+		.info {
+			min-height: 10.25rem;
+		}
+	}
+}  
+  .orascom-manager-details-navigation-container {
+		width: fit-content;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		position: unset;
+		margin: auto;
+		align-items: center;
+		z-index: 0;
+		// margin-top: 1rem;
+		.swiper-pagination-progressbar {
+			transform: rotate(270deg);
+			// left: 32%;
+			position: unset;
+			top: unset;
+			width: 3rem;
+			height: 2px;
+		}
+		.orascom-manager-details-next,
+		.orascom-manager-details-prev {
+			position: unset;
+			margin-top: unset;
+			// margin-inline-end: 1rem;
+			height: 90px;
+			width: calc(90px / 44 * 27);
+		}
+		.swiper-pagination-progressbar-fill {
+			background-color: #000;
+		}
+	}
+}
+@media (min-width : 1024px) {
+  .member-swiper-container{
+    .about-orascom__header{
+      width: 62%;
+    }
+    .member-swiper__wrapper{
+      padding: 0 6.5rem 2rem;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.teaser-chart-section {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 0;
+		// padding: 2.3125rem 1.5rem 2rem;
+		padding: 2.3125rem 0 2rem;
+    .iframe-container {
+        padding: 0 1.5rem;
+        iframe {
+            width: 100%;
+            height: 28rem;
+        }
+    }
+    .annual-report {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        .img-container {
+            // width: 21rem;
+            width: 100%;
+            // height: 10.416rem;
+            height: 12.416rem;
+            position: relative;
+        }
+        .title-container {
+            margin-top: 1.55rem;
+            padding: 0 1.5rem;
+            .title {
+                font-size: 1.9rem;
+                font-weight: 700;
+            }
+            .subtitle {
+                font-size: 1.5rem;
+                font-weight: 700;
+                display: flex;
+                color: #686868;
+								align-items: center;
+                .download-icon {
+                    margin-inline-start: 1.5rem;
+                    margin-top: -0.25rem;
+                    svg {
+                        path {
+                            fill: #686868;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width : 1024px) {
+	.teaser-chart-section {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    gap: 0;
+		padding: 4.3125rem 6.5rem 2rem;
+    .iframe-container {
+        padding: unset;
+        iframe {
+            width: 100%;
+            height: 22.8rem;
+        }
+    }
+    .annual-report {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .img-container {
+            width: 24rem;
+            height: 10.416rem;
+            position: relative;
+        }
+        .title-container {
+            margin-top: 1.55rem;
+            padding: unset;
+            .title {
+                font-size: 2rem;
+                font-weight: 700;
+            }
+            .subtitle {
+                font-size: 1.5rem;
+                font-weight: 700;
+                display: flex;
+                color: #686868;
+                .download-icon {
+                    margin-inline-start: 1.5rem;
+                    margin-top: -0.25rem;
+                    svg {
+                        path {
+                            fill: #686868;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}

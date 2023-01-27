@@ -1,0 +1,322 @@
+.career-form__steps{
+  display: flex;
+  flex-direction: column;
+  .steps-tap{
+    padding: 1rem 0rem 2rem;
+    .tab__list{
+      display: flex;
+      align-items: center;
+      list-style: none;
+      justify-content: center;
+      .tab__item{
+        padding: .5rem 1.5rem;
+        border : 1px solid #DDD;
+        font-size: 1.4rem;
+        font-weight: 500;
+        cursor: pointer;
+        &.active{
+          color: #fff;
+          background: #2D477A ;
+        }
+        &:first-of-type{
+          border-right: 0;
+        }
+      }
+    }
+  }
+  .steps-form{ 
+      background: rgba(251, 251, 251, 0.15);
+      padding: 1rem 0 1rem 0; 
+      form{
+        width: 100%;
+        .field-wrapper{
+          position: relative;
+          .uploadCV {
+            .errorMsg {
+              position: unset !important;
+              color: red !important;
+            }
+          }
+          label{
+            color: #000000;
+            font-size: 1.2rem; 
+          }
+          .input-wrapper{
+            position: relative;
+            padding-bottom: 0;
+            .text-input { 
+              padding: 0.5rem 1rem;
+              background: #F8F8F8;
+              color: #2D477A;
+              width: 100%;
+              margin: 1.2rem 0;
+              font-size: 1rem;
+              &::placeholder {
+                color: rgba($color: #2D477A, $alpha: 0.6);
+              }
+            }
+            textarea {
+              resize: none;
+            }
+            &.input-wrapper--flex{
+              display: flex; 
+              margin-right: 0.9rem;
+              .radio-buttom { 
+                 margin-right: 1rem;
+              }
+              .control-label{
+                font-size: 1.1rem;
+              }
+            }
+          }
+          .field-wrapper-container{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            padding: 1rem 0;
+            &.field-wrapper-container--column{
+              flex-direction: column;
+              align-items: flex-start;
+              padding-top: 0;
+              p{
+                padding-top: 1.5rem;
+                color: #000000;
+                font-size: 1.2rem;
+              }
+              .title{
+                color: #5f5f5f;
+              }
+              .field-wrapper{
+                display: flex;
+                flex-direction: column;
+                .field{
+                  display: none;
+                }
+                .file-input__label{
+                  border: 1px solid #2D477A;
+                  padding: 0.5rem 1rem;
+                  margin: 1rem 0;
+                  color: #2D477A;
+                  font-size: 1.4rem;
+                  cursor: pointer;
+                }
+              }
+              span{
+                color: #5f5f5f;
+                font-size: 1.2rem;
+              }
+            }
+            input[type="radio"] {
+              position: absolute;
+              left: 0;
+              width: 12px;
+              display: none;
+          
+              & + label {
+                position: relative;
+                font-size: 14px;
+                line-height: 1;
+                cursor: pointer;
+                // color: #2D477A;
+                margin: 7px 0px;
+                padding-left: 37px;
+                color: rgba($color: #2D477A, $alpha: 0.6);
+
+                span{
+                  position: absolute;
+                  background-color: #FFF;
+                  left: -11px; 
+                  top: 8px;
+                  transform: translateY(-50%);
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  opacity: 0;
+                  transition: .3s ease all;
+                }
+                &:hover{
+                  span{
+                    opacity: .2;
+                  }
+               }
+              } 
+              & + label:before {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                top: -4px;
+                width: 28px;
+                height: 28px; 
+                background: #F8F8F8; 
+                transition: all 275ms;
+                z-index: 1;
+                border-radius: 50%; 
+
+              }
+          
+              &:not(:checked) + label:after {
+                opacity: 0;
+                // color: #2D477A;
+              } 
+                &:checked + label {
+                  color: #2D477A;
+                } 
+              &:checked + label:after {
+                content: '';
+                position: absolute;
+                width: 12px;
+                height: 12px; 
+                opacity: 1;
+                z-index: 2;
+                background: #2D477A;
+                border-radius: 50%;
+                left: 8px;
+                top: 4px; 
+              }
+            }
+          }
+        }
+      }
+
+      .contact-form-submit-wrapper{
+        width: 100%;
+        .contact-form-submit{
+          background: #2D477A;
+          color: #FFF;
+          text-transform: uppercase;
+          margin: 0.5rem 0;
+          width: 100%;
+          height: 60px;
+          font-size: 1.2rem;
+          letter-spacing: 0.1rem;
+        }
+      } 
+    }
+  }
+  .locationSelectionInput {
+    .input-wrapper {
+      margin-top: 0.75rem;
+      // .css-1s2u09g-control {
+      //   border-radius: 0;
+      // }
+      // .css-1pahdxg-control {
+      //   border-radius: 0;
+      // }
+      // .css-319lph-ValueContainer {
+      //   font-size: 1.25rem;
+      //   cursor: pointer;
+      // }
+      // .css-4ljt47-MenuList {
+      //   padding: 0;
+      //   font-size: 1.3rem;
+      //   .css-1n7v3ny-option {
+      //     cursor: pointer;
+      //     background-color: #ddd;
+      //     color: #000000;
+      //   }
+      //   .css-yt9ioa-option {
+      //     cursor: pointer;
+      //     &:hover {
+      //       font-size: 1.3rem;
+      //     }
+      //   }
+      //   .css-9gakcf-option {
+      //     background-color: $base-color;
+      //     cursor: pointer;
+      //   }
+      // }
+    }
+    .errorMsg {
+      bottom: -1.3rem !important;
+    }
+  }
+  .jobInterestInput {
+    margin-top: 1rem;
+  }
+  .errorMsg{
+    color: red;
+    position: absolute;  
+    bottom: -0.4rem;
+    font-size: 1rem;
+    // padding-inline-start: 1rem;
+  }
+
+  @media (min-width : 1024px) {
+  .career-form__steps{
+    .steps-tap{
+      padding: 2rem 0rem 3rem;
+      .tab__list{ 
+        justify-content: left;
+        .tab__item{
+          // padding: .9rem 3rem; 
+          padding: 0.5rem 3rem; 
+          font-size: 2rem; 
+          cursor: pointer; 
+        }
+      }
+    }
+    .steps-form{  
+        padding: 0 2rem 1rem 0; 
+      form{
+        width: 80%;
+        .field-wrapper{
+          .uploadCV {
+            .errorMsg {
+              position: unset !important;
+              color: red !important;
+            }
+          }
+          label{
+            font-size: 1.5rem;
+          }
+          .input-wrapper {
+            padding-bottom: 0.8rem;
+          .text-input{
+            padding: 0.7rem 1rem;
+            font-size: 1.4rem;
+          } 
+          &.input-wrapper--flex{  
+            .control-label{
+              font-size: 1.7rem;
+              margin-right: 2rem;
+            }
+          }
+        }
+        .field-wrapper-container{ 
+          &.field-wrapper-container--column{ 
+            p{
+              padding-top: 1.5rem; 
+            } 
+            .field-wrapper{ 
+              .file-input__label{ 
+                padding: 1rem 2rem;
+                margin: 1rem 0; 
+                font-size: 1.6rem; 
+              }
+            }
+            span{ 
+              font-size: 1.5rem;
+            }
+          } 
+        } 
+        }
+    }
+    .contact-form-submit-wrapper{
+      width: 100%;
+      .contact-form-submit{ 
+        margin: 2rem 0; 
+        font-size: 1.4rem; 
+      }
+    } 
+  }
+  }
+
+  .jobInterestInput {
+    margin-top: 1rem;
+  }
+  .errorMsg{ 
+    font-size: 1.5rem !important; 
+    bottom: 0 !important;
+  }
+}

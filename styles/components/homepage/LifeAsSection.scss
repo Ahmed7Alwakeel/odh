@@ -1,0 +1,128 @@
+.life-section {
+	padding: 3.3125rem 2.2rem 1rem;
+
+	.life-section__wrapper {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+
+		.life-section__header {
+			width: 100%;
+			margin-bottom: 2rem;
+
+			h2 {
+				color: #000000;
+				font-size: 2.1rem;
+				text-transform: uppercase;
+				font-weight: 800;
+			}
+
+			h3 {
+				color: $alt-color;
+				font-size: 2.3rem;
+				text-transform: uppercase;
+				font-weight: 800;
+				line-height: 2.5rem;
+				font-style: italic;
+			}
+		}
+
+		.life-section__info {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			p {
+				color: #5f5f5f;
+				font-size: 1.2rem;
+				font-weight: 400;
+				// text-transform: capitalize;
+				text-align: justify;
+				white-space: break-spaces;
+			}
+			.learn-more {
+				justify-content: flex-start;
+				margin-inline-end: 1.5rem;
+				&::before {
+					background-color: $alt-color;
+					display: none;
+				}
+				&:hover {
+					padding: 0;
+				}
+			}
+		}
+
+		.section__link {
+			display: inline-flex;
+			background: #1e3364;
+			padding: 0.8rem 1.5rem;
+			font-size: 1.2rem;
+			color: #fff;
+			margin-top: 1.5rem;
+
+			span {
+				padding-right: 0.7rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.life-section {
+		padding: 5.3125rem 6.5rem 1rem;
+		.life-section__wrapper {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			flex-direction: row;
+			text-align: left;
+			align-items: flex-start;
+
+			.life-section__header {
+				line-height: 1;
+				margin-bottom: 0;
+				width: 78.2%;
+				h2 {
+					font-size: 4rem;
+				}
+
+				h3 {
+					font-size: 4rem;
+					line-height: 4rem;
+				}
+			}
+
+			.life-section__info {
+				line-height: 1.3;
+				display: flex;
+				align-items: flex-start;
+				.learn-more-container {
+					display: flex;
+					.learn-more {
+						justify-content: flex-start;
+						margin-inline-end: 1.5rem;
+						&::before {
+							background-color: $alt-color;
+							display: block;
+						}
+						&:hover {
+							padding-inline-start: 5rem;
+						}
+						.read-more-link {
+							font-size: 1.4rem;
+						}
+					}
+				}
+				p {
+					font-size: 1.6rem;
+					// text-align: justify;
+				}
+			}
+
+			.section__link {
+				display: none;
+			}
+		}
+	}
+}

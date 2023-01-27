@@ -1,0 +1,52 @@
+.search-section {
+  padding-inline: 3rem;
+  display: flex;
+  width: 100%;
+  margin-top: 4rem;
+  gap: 2rem;
+  font-size: 1.5rem;
+  flex-direction: column;
+  .search-input-group {
+    width: 100%;
+    .css-tj5bde-Svg {
+      fill: black;
+    }
+    .css-1n7v3ny-option {
+      background-color: rgba(213, 247, 247, 0.4) !important;
+    }
+    .css-4ljt47-MenuList div {
+      border-bottom: 0.5px solid rgb($color: #b0b0b0, $alpha: 0.5) !important;
+      padding: 1rem;
+      &:last-child {
+        border-bottom: none !important;
+      }
+    }
+  }
+  .career-form__steps-wrapper {
+    width: 100%;
+    .read-more__container.careers-form-btn {
+      margin: 0;
+      height: 3rem;
+      &::before {
+        left: 10%;
+      }
+      &:hover {
+        &::before {
+          left: 17%;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .search-section {
+    padding-inline: 6.5rem;
+    flex-direction: row;
+    .search-input-group {
+      width: 50%;
+    }
+    .career-form__steps-wrapper {
+      width: 28%;
+    }
+  }
+}

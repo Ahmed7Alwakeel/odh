@@ -1,0 +1,190 @@
+@import "../styles/variables.scss";
+@import "../styles/components/common/Navbar.scss";
+@import "../styles/components/homepage/Homepage.scss";
+@import "../styles/components/homepage/HomePageBanner.scss";
+@import "../styles/components/common/footer.scss";
+@import "../styles/components/homepage/MediaCenter.scss";
+@import "../styles/components/common/SectionHeader.scss";
+@import "../styles/components/homepage/LifeAsSection.scss";
+@import "../styles/components/homepage/Destinations.scss";
+@import "../styles/components/homepage/DestinationsCard.scss";
+@import "../styles/components/homepage/Price.scss";
+@import "../styles/components/common/ButtonLink.scss";
+@import "../styles/components/common/MobileMenu.scss";
+@import "../styles/components/aboutpage/AboutPageBanner.scss";
+@import "../styles/components/aboutpage/AboutTabs.scss";
+@import "../styles/components/aboutpage/AboutOrascom.scss";
+@import "../styles/components/aboutpage/BoardOfDirectors.scss";
+@import "../styles/components/memberPage/MemberDetails.scss";
+@import "../styles/components/memberPage/MemberSwiper.scss";
+@import "../styles/components/aboutpage/DestinationsMap.scss";
+@import "../styles/components/aboutpage/CountryListItem.scss";
+@import "../styles/components/aboutpage/SelectedCountryDetails.scss";
+@import "../styles/components/aboutpage/SelectedCountryDestinationInfo.scss";
+@import "../styles/components/aboutpage/MissionAndVision.scss";
+@import "../styles/components/article/Article.scss";
+@import "../styles/components/article/ArticleList.scss";
+@import "../styles/components/contactUs/ContactUsHeader.scss";
+@import "../styles/components/contactUs/ContactUsInfo.scss";
+@import "../styles/components/contactUs/ContactUsForm.scss";
+@import "../styles/components/contactUs/ImageBackground.scss";
+@import "../styles/components/contactUs/AccordionInfo.scss";
+@import "../styles/components/destinations/DestinationDetailsBanner.scss";
+@import "../styles/components/destinations/DestinationMapInfo.scss";
+@import "../styles/components/destinations/DestinationSightCard.scss";
+@import "../styles/components/destinations/DestinationSights.scss";
+@import "../styles/components/destinations/DestinationContact.scss";
+@import "../styles/components/career/CareerImage.scss";
+@import "../styles/components/career/CareerForm.scss";
+@import "../styles/components/career/FormSteps.scss";
+@import "../styles/components/ScrollToTop/ScrollToTop.scss";
+@import "../styles/components/aboutpage/OrascomHospitality.scss";
+@import "../styles/components/IRPage/TeaserChart.scss";
+@import "../styles/components/IRPage/LatestResults.scss";
+@import "../styles/components/IRPage/LatestNewsReleases.scss";
+@import "../styles/components/IRPage/ContactIR.scss";
+@import "../styles/components/IRPage/ShareInfo.scss";
+@import "../styles/components/IRPage/Calender.scss";
+@import "../styles//components/IRPage/NewReleases.scss";
+@import "../styles//components/IRPage/TeaserChart.scss";
+@import "../styles//components/IRPage/LatestResults.scss";
+@import "../styles//components/IRPage/NewsCard.scss";
+@import "../styles//components/IRPage/SearchSection.scss";
+@import "../styles//components/common/LoaderSection.scss";
+@import "../styles/components/IRPage/CorporateFilings.scss";
+
+@font-face {
+	font-family: "medium";
+	src: url("../public/fonts/Arquitecta.ttf");
+}
+
+@font-face {
+	font-family: "bold";
+	src: url("../public/fonts/ArquitectaBold.ttf");
+}
+
+.bold {
+	font-family: "bold";
+}
+
+html {
+	font-size: 16px;
+	direction: ltr;
+}
+html,
+body {
+	overscroll-behavior-y: none;
+	-webkit-overflow-scrolling: touch;
+	// scroll-behavior: smooth;
+}
+html,
+body,
+button {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	font-family: "medium" !important;
+	-webkit-tap-highlight-color: transparent;
+}
+
+body.no-scroll {
+	position: fixed;
+	overflow: hidden;
+	height: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-weight: unset;
+}
+p,
+a {
+	margin: 0;
+}
+.swiper-button-prev {
+	&::after {
+		content: "" !important;
+		background-image: url("/icons/arrow-left.svg");
+		width: 100%;
+		height: 100%;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+.w-100 {
+	width: 100%;
+}
+.swiper-button-next {
+	&::after {
+		content: "" !important;
+		background-image: url("/icons/arrow-right.svg");
+		width: 100%;
+		height: 100%;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+iframe #top .top-company-info {
+	color: green !important;
+}
+@media (min-width: 1024px) {
+	html {
+		font-size: 10px;
+	}
+}
+@media (min-width: 1279px) {
+	html {
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 1440px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 1680px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 1900px) {
+	html {
+		font-size: 18px;
+	}
+}
+@keyframes make-full-width {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes fade-and-slide-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

@@ -1,0 +1,222 @@
+.destination--card__container {
+	position: relative;
+	width: 100%;
+	// height: 75vh;
+	height: 12rem;
+
+	.destination--card__img--container {
+		position: relative;
+		height: 100%;
+		width: 100%;
+	}
+
+	.destination--card__overlay {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		top: 0;
+		background: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.7105435924369747) 0%,
+			rgba(0, 0, 0, 0) 25%
+		);
+		// opacity: 0.3;
+		.destination--card__text--container {
+			position: absolute;
+			// top: 100%;
+			bottom: -9rem;
+			bottom: -17rem;
+			transform: translateY(-4rem);
+			padding-bottom: 1.5rem;
+			left: 2rem;
+			right: 2rem;
+			color: #fff;
+			transition: all ease-in-out 0.5s;
+			.destination--card_header {
+				display: flex;
+				align-items: center;
+				// padding-bottom: 0.75rem;
+				padding-bottom: 0.4rem;
+				img {
+					margin-inline-end: 1.5rem;
+					width: 5.5rem;
+					height: 5.5rem;
+				}
+				h4 {
+					font-size: 1.5rem;
+					font-weight: 800;
+					text-transform: uppercase;
+				}
+			}
+
+			p {
+				font-size: 1.25rem;
+				width: 90%;
+				line-height: 1.2;
+				white-space: break-spaces;
+			}
+
+			.read-more__container {
+				display: flex;
+				align-items: center;
+				margin-top: 1.25rem;
+				cursor: pointer;
+			}
+			@media (max-width: 1024px) {
+				p {
+					width: 90%;
+				}
+			}
+		}
+		&.overlay--no-bg {
+			background: unset;
+			.destination--card__text--container {
+				// bottom: -9rem;
+				bottom: -14rem;
+				color: #000;
+				left: 0;
+				right: 0;
+				padding: 5px;
+				p {
+					font-size: 1.3rem;
+					width: 100%;
+					// line-clamp: 2;
+					// height: 40px;
+					// -webkit-line-clamp: 2;
+					height: 3rem;
+					overflow: hidden;
+					display: -webkit-box;
+					// text-overflow: ellipsis;
+					-webkit-box-orient: vertical;
+				}
+				.read-more__container {
+					margin-top: 1.1rem;
+				}
+			}
+		}
+	}
+
+	&.w-50 {
+		width: calc(50% - 0.5rem);
+		margin-inline-end: 1rem;
+
+		&:last-child {
+			margin-inline-end: 0;
+		}
+	}
+
+	&.w-25 {
+		width: calc(25% - 0.5rem);
+		margin-inline-end: 1rem;
+
+		.destination--card__text--container {
+			p {
+				// width: 80%;
+				width: 90%;
+			}
+		}
+	}
+	&.h-50 {
+		height: calc(50% - 0.5rem);
+		margin-top: 1rem;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		.destination--card__text--container {
+			p {
+				width: 90%;
+			}
+		}
+	}
+	&.h-100 {
+		height: calc(100% - 0.5rem);
+		margin-top: 0;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		.destination--card__text--container {
+			p {
+				width: 100%;
+			}
+		}
+	}
+	:hover {
+		.photoCredit {
+			opacity: 1;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.destination--card__container {
+		overflow: hidden;
+		height: unset;
+		.destination--card__overlay {
+			transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+			.destination--card__text--container {
+				top: 100%;
+				bottom: unset;
+				left: 1rem;
+				right: 1rem;
+				transform: translateY(-3rem);
+				.destination--card_header {
+					padding-bottom: 2rem;
+					h4 {
+						width: 85%;
+						text-shadow: 1px 1px #000000;
+					}
+				}
+				.destination--card-details {
+					p {
+						-webkit-line-clamp: 4;
+						overflow: hidden;
+						display: -webkit-box;
+						-webkit-box-orient: vertical;
+						font-size: 1.25rem;
+					}
+					.read-more__container {
+						.read-more-link {
+							font-size: 1.25rem;
+						}
+					}
+				}
+				.photoCredit {
+					position: absolute;
+					bottom: 0.4rem;
+					right: 1.4rem;
+					z-index: 5;
+					opacity: 0;
+					transition: all 0.3s ease-in-out;
+					span {
+						color: #fff;
+						font-size: 1.4rem;
+					}
+				}
+			}
+		}
+		&:hover {
+			.destination--card__overlay {
+				background: linear-gradient(
+					0deg,
+					rgba(0, 0, 0, 1) 0%,
+					rgba(0, 0, 0, 0) 100%
+				);
+				transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+				.destination--card__text--container {
+					transform: translateY(-100%);
+					.photoCredit {
+						opacity: 1;
+					}
+				}
+			}
+		}
+		&:last-of-type {
+			margin-inline-end: 0;
+		}
+	}
+}

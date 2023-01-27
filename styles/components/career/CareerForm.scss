@@ -1,0 +1,32 @@
+.career-orascom-form-container{
+  padding: 1rem; 
+  .career-orascom-form-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    .career-form__info{
+      width: 100%;
+    }
+    .career-form__steps-wrapper{
+      width: 100%;
+    }
+  }
+}
+@media (min-width : 1024px) {
+  .career-orascom-form-container{
+    padding: 3rem 1rem; 
+    .career-orascom-form-wrapper{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      .career-form__info{
+        width: 50%;
+      }
+      .career-form__steps-wrapper{
+        width: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,154 @@
+.latest-results-section {
+    padding: 3.3125rem 1.5rem;
+    .title {
+        h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+    }
+    .subtitle {
+        padding: 1rem 0 2rem;
+        span {
+            font-size: 1.5rem;
+            color: #686868;
+        }
+    }
+    .results-sections {
+        display: grid;
+        grid-template-columns:  1fr ;
+        .section {
+            position: relative;
+            // border-bottom: 2px solid #DDD;
+            margin-bottom: 1rem;
+
+            &:not(:last-of-type) {
+                border-inline-end: unset;
+                border-bottom: 2px solid #DDD;
+            }
+            &:not(:first-of-type) {
+                padding-inline-start: 0;
+            }
+            .title {
+                color: #686868;
+                font-size: 1.5rem;
+                font-weight: 600;
+                padding-bottom: 1rem;
+            }
+            .subtitle {
+                display: flex;
+                align-items: center;
+                h4 {
+                    color: $base-color;
+                    font-size: 1.75rem;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+                .play-icon {
+                    margin-inline-end: 0.5rem;
+                    cursor: pointer;
+                    svg {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        path {
+                            fill: $base-color;
+                        }
+                    }
+                }
+
+            }
+            audio {
+                position: absolute;
+                left: 0;
+                height: 3.5rem;
+                width: 100%;
+            }
+        }
+    }
+}
+@media (min-width : 1024px) {
+    .latest-results-section {
+        padding: 5.3125rem 6.5rem;
+        .title {
+            h2 {
+                font-size: 3.5rem;
+                font-weight: 800;
+                text-transform: uppercase;
+            }
+        }
+        .subtitle {
+            padding: 1rem 0 2rem;
+            span {
+                font-size: 1.5rem;
+                color: #686868;
+            }
+        }
+        .results-sections {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            .section {
+                position: relative;
+                &:not(:last-of-type) {
+                    border-inline-end: solid 1px #c4c2c2;
+                    border-bottom: none;
+                }
+                &:not(:first-of-type) {
+                    padding-inline-start: 4.5rem;
+                }
+                .title {
+                    color: #686868;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    padding-bottom: 1rem;
+                }
+                .subtitle {
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 0;
+                    padding-top: 0;
+                    margin-top: 1rem;
+                    margin-bottom: 2rem;
+                    &.audioSection {
+                        &:hover {
+                            h4 {
+                                color: $alt-color;
+                            }
+                            .play-icon {
+                                svg {
+                                    path {
+                                        fill: $alt-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    h4 {
+                        color: $base-color;
+                        font-size: 1.75rem;
+                        line-height: 1;
+                        font-weight: 600;
+                        cursor: pointer;
+                    }
+                    .play-icon {
+                        margin-inline-end: 0.5rem;
+                        cursor: pointer;
+                        svg {
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            path {
+                                fill: $base-color;
+                            }
+                        }
+                    }
+    
+                }
+                audio {
+                    position: absolute;
+                    left: 4.5rem;
+                    height: 3.5rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

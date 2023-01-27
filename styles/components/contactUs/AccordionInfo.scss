@@ -1,0 +1,100 @@
+.accordion-contactus-mobile{
+  border: 1px solid #ddd;
+  &:first-of-type{
+    border-top: 0;
+  }
+  &:last-of-type{
+    border-bottom: 0;
+  }
+  .accordion-header{
+    .css-cgqni3{
+      padding-left: 0;
+      flex-flow: row-reverse;
+      background: transparent;
+      padding: 1rem 1rem; 
+    }
+    .css-1eziwv{
+      padding-left: 1rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+    } 
+  } 
+  .chakra-collapse{
+    .address {
+      color: #5f5f5f;
+      font-size: 1.3rem;
+      padding: 0rem 0 1.6rem 0;
+      // height: 6.6rem;
+    }
+    .office{
+      padding-top: 0;
+      height: 4rem; 
+      color: #5f5f5f;
+      font-size: 1.3rem;
+    }
+    .react-tabs__tab-list {
+      list-style: none;
+      border-bottom: 0;
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.8rem;
+        .list-item-link{
+          display: flex;
+          align-items: center;
+          margin-bottom: 0.8rem;
+        }
+        .icon-container {
+          border: 1px solid #ddd;
+          border-radius: 50%;
+          width: 2.6rem;
+          height: 2.6rem;
+          padding: 0.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          .image-wrapper {
+            position: relative;
+            width: 1.1rem;
+            height: 1.1rem;
+          }
+        }
+        .name {
+          color: #000000;
+          font-size: 1.4rem;
+          padding-left: 1rem;
+        }
+      }
+    }
+  }
+  .icon-container {
+    border: 1px solid #ddd;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    padding: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    .image-wrapper {
+      position: relative;
+      width: 1rem;
+      height: 1rem; 
+      &.minus{
+        width: 1.2rem;
+        height: 0.2rem;
+      }
+    }
+  }
+  .css-17mg6aq{
+    &:first-of-type{
+      border-top: 0;
+    }
+    &:last-of-type{
+      border-bottom: 0;
+    }
+  }
+}
+ 
